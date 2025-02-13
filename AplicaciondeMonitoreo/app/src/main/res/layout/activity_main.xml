@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="horizontal">
+    <!---android:orientation="vertical"  PARA EN LISTAR LOS DISPOSITIVOS DE ARRIBA HACIA ABAJO-->
+    <LinearLayout
+        android:id="@+id/containerGraph"
+        android:layout_width="381dp"
+        android:layout_height="match_parent"
+        android:layout_weight="20"
+        android:orientation="vertical">
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/graph"
+            android:layout_width="333dp"
+            android:layout_height="249dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:translationX="5dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/containerDevice"
+        android:orientation="vertical"
+        android:layout_weight="20"
+        android:visibility="gone"
+        >
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listDeviceBluetooth"
+            >
+        </ListView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/containerControll"
+        android:layout_width="247dp"
+        android:layout_height="400dp"
+        android:layout_weight="80"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="HUMEDAD"
+            android:textAlignment="center"
+            android:textColor="#468300" />
+
+        <TextView
+            android:id="@+id/txtHume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="0 %"
+            android:textAlignment="center"
+            android:textColor="#468300"></TextView>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="TEMPERATURA"
+            android:textAlignment="center"
+            android:textColor="#FF0000" />
+
+        <TextView
+            android:id="@+id/txtTemp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="0 C°"
+            android:textAlignment="center"
+            android:textColor="#FF0000"></TextView>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="LUMINOSIDAD"
+            android:textAlignment="center"
+            android:textColor="#CCB700" />
+
+        <TextView
+            android:id="@+id/textLuminosidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="-DATO-"
+            android:textAlignment="center"
+            android:textColor="#CCB700"></TextView>
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="NIVEL DE AGUA"
+            android:textAlignment="center"
+            android:textColor="#00B0FF"></TextView>
+
+        <TextView
+            android:id="@+id/textAGUA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="-DATO-"
+            android:textAlignment="center"
+            android:textColor="#00B0FF" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/containerControlx"
+        android:layout_width="332dp"
+        android:layout_height="400dp"
+        android:layout_weight="80"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnViewDevice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:text="Device"></Button>
+
+        <Button
+            android:id="@+id/btnInitStop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:text="START"></Button>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="INDICACIONES"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textTIP1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="-TIP 1-"
+            android:textAlignment="center"
+            android:textColor="#D88100" />
+
+        <TextView
+            android:id="@+id/textTIP2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="-TIP 2-"
+            android:textAlignment="center"
+            android:textColor="#D88100" />
+
+        <TextView
+            android:id="@+id/textTIP3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-TIP 3-"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textColor="#D88100" />
+
+        <TextView
+            android:id="@+id/textTIP4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-TIP 4-"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textColor="#D88100"/>
+    </LinearLayout>
+
+
+    </LinearLayout>
